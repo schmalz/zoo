@@ -38,6 +38,8 @@
   (atom (sorted-map)))
 
 (defn- make-animal
+  "Animals are represented as maps of keys: :species, :name, :call and
+   :satisfaction-level. Given SPECIES and NAME, return a new animal."
   [species name]
   (let [species-key (species-keywords species)]
     {:species species-key
@@ -46,6 +48,8 @@
      :satisfaction-level (satisfaction-levels species-key)}))
 
 (defn- feed
+  "Feed ANIMAL an AMOUNT of food. Returns the animal's call if it is satisfied,
+   it's call in upper-case if it is not!"
   [animal amount]
   (let [call (animal :call)]
     (if (<= amount (animal :satisfaction-level))

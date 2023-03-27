@@ -22,7 +22,7 @@ And have different calls:
  - Cats: "meow"
  - Mice "eek"
 
- The animals in the zoo are fed once a day; on Tuesday and Thursday they are fed 40 and on all other days 20. When they are fed, each animal responds with its call, lower-case if it is satisfied, upper-case if not.
+ The animals in the zoo are fed once a day; on Tuesday and Thursday they are fed 40 and on all other days 20. When they are fed, each animal responds with its call, lower-case if it is satisfied (i.e the amount it has been fed is less than or equal to its satisfaction level), upper-case if not.
 
  On weekdays the animals are fed in alphabetical order of their names, on weekends they are fed in any order.
 
