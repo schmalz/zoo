@@ -70,7 +70,7 @@
       (catch Exception _ex
         false))))
 
-(defn feed-aminals
+(defn feed-animals
   "Feed all the animals in the zoo on DAY."
   [day]
   (let [day-key (day-keywords day)]
@@ -96,7 +96,7 @@
         "fido the dog added to the zoo")
 
 (assert (= ["MEOW" "WOOF" "EEK" "MEOW"]
-           (feed-aminals "monday")))
+           (feed-animals "monday")))
 
 (assert (= ["meow" "woof" "EEK" "meow"]
-           (feed-aminals "tuesday")))
+           (feed-animals "tuesday")))
