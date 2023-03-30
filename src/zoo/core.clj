@@ -35,6 +35,7 @@
    :sunday 40})
 
 (def ^:private zoo
+  "Maps animal name (sorted alphabetically) to animal record."
   (atom (sorted-map)))
 
 (defn- make-animal
